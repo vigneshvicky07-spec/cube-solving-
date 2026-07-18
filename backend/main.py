@@ -3,9 +3,9 @@ from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from typing import Optional, List
 import time
-from color_detector import detect_colors_from_b64, build_cube_state
-from cube_solver import solve_cube
-from history import init_db, save_solve, get_history, clear_history
+from backend.color_detector import detect_colors_from_b64, build_cube_state
+from backend.cube_solver import solve_cube
+from backend.history import init_db, save_solve, get_history, clear_history
 # Initialize database on startup
 init_db()
 app = FastAPI(title="Rubik's Cube Solver API", version="1.0.0")
