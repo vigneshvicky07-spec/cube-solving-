@@ -3,7 +3,7 @@ import CameraFeed from './components/CameraFeed.jsx'
 import CubeVisualizer from './components/CubeVisualizer.jsx'
 import SolvePanel from './components/SolvePanel.jsx'
 import HistoryLog from './components/HistoryLog.jsx'
-import './App.css'
+import './components/App.css'
 const TABS = [
   { id: 'scan',    label: 'Scan Cube',    icon: '📷' },
   { id: 'solve',   label: '3D Solver',    icon: '🎲' },
