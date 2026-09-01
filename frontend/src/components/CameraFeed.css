@@ -3,7 +3,8 @@
   display: grid;
   grid-template-columns: 1fr 340px;
   gap: 24px;
-  height: calc(100vh - 140px);
+  min-height: calc(100vh - 140px);
+  height: auto;
 }
 /* Panel */
 .camera-panel {
