@@ -3,8 +3,10 @@ import CameraFeed from './components/CameraFeed.jsx'
 import CubeVisualizer from './components/CubeVisualizer.jsx'
 import SolvePanel from './components/SolvePanel.jsx'
 import HistoryLog from './components/HistoryLog.jsx'
+import ManualInput from './components/ManualInput.jsx'
 const TABS = [
   { id: 'scan',    label: 'Scan Cube',    icon: '📷' },
+  { id: 'manual', label: 'Manual Input', icon: '✍️' },
   { id: 'solve',   label: '3D Solver',    icon: '🎲' },
   { id: 'history', label: 'History',      icon: '📜' },
 ]
