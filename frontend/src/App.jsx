@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import CameraFeed from './components/CameraFeed.jsx'
-import ManualInput from './components/ManualInput.jsx'
 import CubeVisualizer from './components/CubeVisualizer.jsx'
+import ManualInput from './components/ManualInput.jsx'
 import SolvePanel from './components/SolvePanel.jsx'
 import HistoryLog from './components/HistoryLog.jsx'
 const TABS = [
