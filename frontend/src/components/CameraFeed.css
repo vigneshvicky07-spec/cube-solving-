@@ -55,7 +55,7 @@
 /* Grid overlay */
 .overlay-grid {
   position: absolute;
-  inset: 20%;
+  inset: 15%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
