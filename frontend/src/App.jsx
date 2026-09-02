@@ -1,10 +1,12 @@
 import React, { useState } from 'react'
 import CameraFeed from './components/CameraFeed.jsx'
 import CubeVisualizer from './components/CubeVisualizer.jsx'
+import ManualInput from './components/ManualInput.jsx'
 import SolvePanel from './components/SolvePanel.jsx'
 import HistoryLog from './components/HistoryLog.jsx'
 const TABS = [
   { id: 'scan',    label: 'Scan Cube',    icon: '📷' },
+  { id: 'manual', label: 'Manual Input', icon: '✍️' },
   { id: 'solve',   label: '3D Solver',    icon: '🎲' },
   { id: 'history', label: 'History',      icon: '📜' },
 ]
@@ -86,6 +88,9 @@ export default function App() {
             onStateBuilt={setCubeState}
           />
         )}
+        {activeTab === 'manual' && (
+         <ManualInput key="manual" />
+     )}
         {activeTab === 'solve' && (
           <div className="solve-layout">
             <CubeVisualizer
